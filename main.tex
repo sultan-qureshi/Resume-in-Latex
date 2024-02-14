@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeCertificationRow}[4]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small
+      \textbf{#1} | 
+      \textit{\href{#4}{\textcolor{Blue}{#2}}} & 
+      \textit{\small #3}
+       \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Sultan Qureshi} \\ \vspace{1pt}
+    {\small
+    +919682534844 $|$ \href{mailto:sultanmq1999@gmail.com}{\textcolor{Blue}{sultanmq1999@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/sultanqureshi}{\textcolor{Blue}{ linkedin.com/in/sultanqureshi}} $|$
+    \href{https://github.com/sultan-qureshi}{\textcolor{Blue}{github.com/sultan-qureshi}}
+    }
+\end{center}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, SQL, TypeScript, HTML/CSS } \\
+     \textbf{Frameworks}{: Spring Boot, Spring Batch, Angular} \\
+     \textbf{Tools}{: Jira, IntelliJ IDEA, Eclipse,  Maven, Bitbucket, Postman, SoapUI, Jenkins, Rancher, Splunk Enterprise, Veracode,  ActiveMQ} \\
+     \textbf{Database Management}{: Oracle SQL Developer, MySQL, Microsoft SSMS}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Capgemini}{Bengaluru}
+      {Java Developer | BSS Middleware Project}
+      {Mar. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Contributed significantly in designing and developing Spring Boot RESTful APIs and event-driven services for a leading US telecom client's Middleware Integration project}
+        \resumeItem{Collaborated closely with team members to gather requirements, decipher E2E business flows, and deliver customized technology solutions for the client}
+        \resumeItem{Executed the transition from a monolithic architecture to Spring Boot microservices, enhancing efficiency and scalability in our middleware and API framework}
+        \resumeItem{Achieved enhanced sales processes, and increased productivity through advanced CRM features implementation and seamless integration collaboration}
+        \resumeItem{Facilitated migration efforts from Red Hat Fuse to Apache ActiveMQ Artemis for integration and messaging requirements, alongside transitioning from SOAP to REST APIs}
+      \resumeItemListEnd
+    
+    \resumeSubSubheading
+        {Java Developer | PLM Application}
+        {Oct. 2021 -- Mar. 2022}
+        \resumeItemListStart
+         \resumeItem{Collaborated on the back-end  team to develop Spring Boot microservices, enabling seamless communication across PLM components.}
+         \resumeItem{Developed a Spring batch Job to migrate Oracle database data to Elasticsearch, ensuring data integrity and a smooth transition}
+         \resumeItem{Contributed to modernizing legacy systems, enhancing scalability and efficiency of the application, resulting in more then 30\% performance improvement}
+        
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Inventeron Technologies}
+      {Bengaluru}
+      {Project Intern}{Mar. 2021 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{Developed a real-time web application for stock prediction leveraging advanced Python libraries, including Facebook's Prophet for training data and Yahoo Finance API for retrieving stock data.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{FlyFlex | }\emph{Capgemini Training Project}}{Oct. 2021 -- Dec. 2021}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a full stack web application for flight booking, leveraging Spring Boot microservices for backend APIs and MongoDB for database management}
+            \resumeItem{ Implemented Spring Security with JWT token authentication for secure user authentication}
+            \resumeItem{ Designed and implemented the frontend using Angular framework}
+            \resumeItem{ Utilized GitHub for version control and incorporated Netflix Eureka server for service discovery and API Gateway for routing}
+           
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Horizon College of Engineering}{Bengaluru}
+      {Bachelor of Engineering in Computer Science \& Technology}{Aug. 2017 -- Sep. 2021}
+      \resumeSubSubheading
+     {8.4/10 CGPA}{}
+    
+  \resumeSubHeadingListEnd
+%-----------Certifications-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+  
+    \resumeCertificationRow
+        {Docker Essentials}
+        {Cognitive Class by IBM}
+        {Feb. 2024}
+        {https://courses.cognitiveclass.ai/certificates/4da2744fec7a424bbbd98368dcfae4e6}
+        
+    \resumeCertificationRow
+        {AWS Certified Cloud Practitioner}
+        {Amazon Web Services}
+        {Feb. 2022}
+        % {4}=Certificate Link
+        {https://www.credly.com/badges/111f8f6f-e552-4302-a691-42e7ad57c424} 
+
+    \resumeCertificationRow
+        {Agile Software Development}
+        {Coursera}
+        {Feb. 2022}
+        {https://www.coursera.org/account/accomplishments/verify/5YUWZZE44GU3}
+           
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
